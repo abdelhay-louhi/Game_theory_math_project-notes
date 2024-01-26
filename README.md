@@ -26,11 +26,7 @@ Valeur de Shapley et nucléole pour évaluer les résultats des jeux coopératif
 
 - L’idée est de trouver des solutions qui tiennent compte de la contribution individuelle de chaque acteur de la coalition. Le
 La valeur Shapley attribue à chaque joueur une valeur qui représente sa contribution marginale moyenne sur tous les éléments possibles.
-coalitions. Il est calculé en considérant toutes les permutations possibles de joueurs et en mesurant le marginal de chaque joueur.
-contribution à chaque étape du processus de formation de la coalition. La valeur de Shapley (ϕiϕi​) pour un joueur ii est calculée par
-faire la moyenne de leur contribution marginale sur toutes les coalitions possibles : ϕi=1N!∑π∈ΠNContribution marginale de i dans la coalition
-πϕi​=N!1​∑π∈ΠN​​Contribution marginale de i dans la coalition π Ici, NN est le nombre total de joueurs, et ΠNΠN​ désigne le
-ensemble de toutes les permutations possibles de joueurs.
+"""delete what is inside those quotes and put the Formula"""
 
 ### Les jeux non coopératifs:
 
