@@ -40,6 +40,14 @@ Dans les jeux à stratégies mixtes (où les joueurs choisissent aléatoirement 
 trouver un équilibre de Nash implique de résoudre un système d'équations ou d'inégalités pour déterminer
 les probabilités optimales pour chaque joueur. Cela se fait souvent à l'aide de techniques de programmation linéaire.
 
+#### Algorithme de Lemke–Howson :
+L'algorithme de Lemke-Howson est un algorithme qui calcule un équilibre de Nash d'un jeu bimatrice, du nom de ses inventeurs,
+Carlton E. Lemke et J. T. Howson. On dit qu'il est « le plus connu parmi les algorithmes combinatoires pour trouver
+un équilibre de Nash », bien que plus récemment l'algorithme de Porter-Nudelman-Shoham ait surperformé sur un certain nombre de benchmarks.
+L'entrée de l'algorithme est un jeu G à 2 joueurs. Ici, G est représenté par deux matrices de jeu m × n A et B, contenant les gains 
+des joueurs 1 et 2 respectivement, qui ont respectivement m et n stratégies pures. Dans ce qui suit, on suppose que tous les gains sont positifs.
+(En redimensionnant, n'importe quel jeu peut être transformé en un jeu stratégiquement équivalent avec des gains positifs.)
+
 - Dans un jeu non coopératif, chaque joueur choisit sa stratégie indépendamment des stratégies des autres joueurs mais le joueur
 pourrait coopérer avec les autres pour maximiser ses gains et ils se termineront là où la stratégie de chaque joueur est la meilleure réponse
 pour les stratégies des autres joueurs, c'est ce que nous appelons l'équilibre de Nash. Tellement déterminé
