@@ -1,49 +1,53 @@
 
-# Math project
+# Projet de mathématiques 
 
-## Algorithms used in game theory:
+## Algorithmes utilisés en théorie des jeux:
 
-### For cooperative games:
-#### Shapley Value:
-The Shapley value is a widely used solution concept that distributes the total value of the coalition  
-among its members based on their marginal contributions to all possible coalitions.  
-The Shapley value is calculated by considering all possible orders in which players can join a coalition  
-and averaging the marginal contributions over all possible orders.
-#### Core:
-The core is a set of payoff allocations where no subset of players can improve their situation by forming a new coalition.
-The core is a solution concept that reflects stability in the sense that no subgroup has an incentive  
-to break away and form a coalition on their own.
+### Les jeux coopératifs:
 
+#### Valeur de Shapley:
+La valeur de Shapley est un concept de solution largement utilisé qui distribue la valeur totale de la coalition
+parmi ses membres en fonction de leurs contributions marginales à toutes les coalitions possibles.
+La valeur Shapley est calculée en considérant tous les ordres possibles dans lesquels les joueurs peuvent rejoindre une coalition.
+et faire la moyenne des contributions marginales sur toutes les commandes possibles.
 
-### For non-cooperative games:
+#### noyau:
+Le noyau est un ensemble d’allocations de récompenses dans lesquelles aucun sous-ensemble d’acteurs ne peut améliorer sa situation en formant une nouvelle coalition.
+Le noyau est un concept de solution qui reflète la stabilité dans le sens où aucun sous-groupe n'est incité à
+se séparer et former une coalition par eux-mêmes.
+
+- En théorie des jeux, un jeu coopératif (ou jeu coalitionnel) est un jeu avec compétition entre groupes de joueurs.
+(« coalitions ») en raison de la possibilité d'une application externe du comportement coopératif. Ceux-ci s'opposent à
+jeux non coopératifs dans lesquels soit il n'y a aucune possibilité de forger des alliances, soit tous les accords doivent être conclus
+auto-exécutoire.
+Dans les jeux coopératifs, l'accent est mis sur la stabilité et l'équité des résultats obtenus grâce à la coopération et
+coordination. Au lieu de l'équilibre de Nash, la théorie des jeux coopératifs utilise souvent des concepts de solution tels que le noyau, le
+Valeur de Shapley et nucléole pour évaluer les résultats des jeux coopératifs.-
+
+- L’idée est de trouver des solutions qui tiennent compte de la contribution individuelle de chaque acteur de la coalition. Le
+La valeur Shapley attribue à chaque joueur une valeur qui représente sa contribution marginale moyenne sur tous les éléments possibles.
+coalitions. Il est calculé en considérant toutes les permutations possibles de joueurs et en mesurant le marginal de chaque joueur.
+contribution à chaque étape du processus de formation de la coalition. La valeur de Shapley (ϕiϕi​) pour un joueur ii est calculée par
+faire la moyenne de leur contribution marginale sur toutes les coalitions possibles : ϕi=1N!∑π∈ΠNContribution marginale de i dans la coalition
+πϕi​=N!1​∑π∈ΠN​​Contribution marginale de i dans la coalition π Ici, NN est le nombre total de joueurs, et ΠNΠN​ désigne le
+ensemble de toutes les permutations possibles de joueurs.
+
+### Les jeux non coopératifs:
+
 #### Best Response Dynamics:
-In a best response dynamic, each player repeatedly adjusts their strategy to improve  
-their own payoff given the current strategies of the other players. The process continues until no player 
-has an incentive to unilaterally deviate from their current strategy. This might converge to a Nash equilibrium.
+Dans une dynamique de meilleure réponse, chaque joueur ajuste à plusieurs reprises sa stratégie pour améliorer
+leur propre récompense compte tenu des stratégies actuelles des autres joueurs. Le processus continue jusqu'à ce qu'aucun joueur
+est incité à s’écarter unilatéralement de sa stratégie actuelle. Cela pourrait converger vers un équilibre de Nash.
+
 #### Mixed Strategy Nash Equilibrium:
-In games with mixed strategies (where players randomize over different strategies with certain probabilities),  
-finding a Nash equilibrium involves solving a system of equations or inequalities to determine  
-the optimal probabilities for each player. This is often done using linear programming techniques.
+Dans les jeux à stratégies mixtes (où les joueurs choisissent aléatoirement différentes stratégies avec certaines probabilités),
+trouver un équilibre de Nash implique de résoudre un système d'équations ou d'inégalités pour déterminer
+les probabilités optimales pour chaque joueur. Cela se fait souvent à l'aide de techniques de programmation linéaire.
 
-## notes:
-- In non Cooperative game each player choose his strategy independently of the other players strategies but the player
-could cooperate with the others to maximize its payoff and they will end where each player strategy is the best response  
-to the other players strategies that's what we call Nash equilibrium. So determinate 
-Nash equilibrium we could use Lemke Howson Algorithm.
+- Dans un jeu non coopératif, chaque joueur choisit sa stratégie indépendamment des stratégies des autres joueurs mais le joueur
+pourrait coopérer avec les autres pour maximiser ses gains et ils se termineront là où la stratégie de chaque joueur est la meilleure réponse
+pour les stratégies des autres joueurs, c'est ce que nous appelons l'équilibre de Nash. Tellement déterminé
+Équilibre de Nash, nous pourrions utiliser l'algorithme de Lemke Howson.
 
-- In game theory, a cooperative game (or coalitional game) is a game with competition between groups of players   
-("coalitions") due to the possibility of external enforcement of cooperative behavior. Those are opposed to 
-non-cooperative games in which there is either no possibility to forge alliances or all agreements need to be 
-self-enforcing.
-In cooperative games, the focus is on the stability and fairness of outcomes achieved through cooperation and 
-coordination. Instead of Nash equilibrium, cooperative game theory often employs solution concepts such as the core, the 
-Shapley value, and the nucleolus to evaluate the outcomes of cooperative games.-
 
-- The idea is to find solutions that take into account the individual contribution of each player to the coalition. The 
-Shapley value assigns each player a value that represents their average marginal contribution across all possible 
-coalitions. It is calculated by considering all possible permutations of players and measuring each player's marginal 
-contribution at each step of the coalition formation process. The Shapley value (ϕiϕi​) for a player ii is computed by 
-averaging their marginal contribution over all possible coalitions: ϕi=1N!∑π∈ΠNMarginal Contribution of i in coalition 
-πϕi​=N!1​∑π∈ΠN​​Marginal Contribution of i in coalition π Here, NN is the total number of players, and ΠNΠN​ denotes the 
-set of all possible permutations of players.
 
